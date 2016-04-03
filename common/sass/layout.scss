@@ -7,6 +7,8 @@
 /////// オリジナルテーマカラー設定 ( クラス名 , 色 ) ///////
 @include customize-theme-color(craft, #ffe100);
 //@include customize-theme-color(test2,#f00);
+
+//デフォルトのスタイル
 html {
   font-size: 14px;
 }
@@ -14,7 +16,10 @@ img {
   width: 100%;
   height: auto;
 }
-
+h1 .h1-sub,.h1 .h1-sub {
+  font-size: 1rem;
+  display: block;
+}
 header {
   .clear {
     clear: both;
@@ -175,44 +180,6 @@ $listTypeWid: 0.5;
   }
 }
 
-footer {
-  margin: 0 auto;
-  text-align: center;
-}
-
-main {
-  margin: 0 auto;
-}
-
-
-.pull-left {
-  width: 45em;
-  padding: 0 .625em 0 1.25em;
-}
-
-.pull-right {
-  width: 15em;
-  padding: 0 1.25em 0 .625em;
-}
-
-//.btn {
-//  margin: .625em 1.25em 0 0;
-//  padding: .375em .75em;
-//  border: 1px solid #01579B;
-//  border-radius: .25em;
-//  background-color: #0277BD;
-//  font-size: 1rem;
-//  color: #fff;
-//}
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -254,38 +221,6 @@ body {
 }
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -307,4 +242,3 @@ body {
     margin-top: 7rem;
   }
 }
-

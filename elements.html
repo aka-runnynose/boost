@@ -10,14 +10,6 @@
 		<link rel="stylesheet" href="common/css/bootstrap.css">
 		<link rel="stylesheet" href="common/css/layout.css">
 		<link rel="stylesheet" href="common/css/de_customize_a.css">
-		<script src="common/js/jquery-2.1.4.min.js"></script>
-		<script src="common/js/bootstrap.js"></script>
-		<script src="common/js/bootstrap-customize.js"></script>
-		<script>
-				$(function () {
-						$('[data-toggle="tooltip"]').tooltip();
-				});
-		</script>
 		<style>
 				.element-title {
 						font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
@@ -65,11 +57,11 @@
 								<li class="nav-item nav-link"><a href="">リンク</a></li>
 								<li class="nav-item nav-link"><a href="">リンク</a></li>
 						</ul>
-						<div class="input-group pull-xs-left m-x">
+						<div class="input-group pull-xs-left m-l-1">
 								<input type="text" class="form-control" placeholder="検索する">
 								<span class="pcSearch input-group-btn"><button class="btn btn-primary" type="submit">検索</button></span>
 						</div>
-						<button type="submit" class="btn btn-primary pull-xs-left">お問い合わせ</button>
+						<button type="submit" class="btn btn-primary pull-xs-left m-l-1">お問い合わせ</button>
 				</div>
 				<nav>
 						<button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -96,40 +88,40 @@
 
 <div class="container">
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">見出し</h1>
 
 				<span class="label label-primary">H1-1</span><button class="copy_btn" type="button" onmousedown='window.clipboardData.setData("Text","\<h1 class=\"\"\>見出しH1</h1>");'>copy HTML</button>
 				<!-- H1 -->
-				<h1 class="">見出しH1</h1>
+				<h1 class="h1">見出しH1</h1>
 				<!-- H1 -->
 
 				<span class="label label-primary">H1-2</span>
 				<!-- H1-2 -->
-				<h1 class=""><span class="">テキスト</span><br>見出しH1-2</h1>
+				<h1 class="h1"><span class="h1-sub">テキスト</span>見出しH1-2</h1>
 				<!-- H1-2 -->
 
 				<span class="label label-primary">H2</span>
 				<!-- H2 -->
-				<h2 class="">見出しH2</h2>
+				<h2 class="h2">見出しH2</h2>
 				<!-- H2 -->
 
 				<span class="label label-primary">H3</span>
 				<!-- H3 -->
-				<h3 class="">見出しH3</h3>
+				<h3 class="h3">見出しH3</h3>
 				<!-- H3 -->
 
 				<span class="label label-primary">H4</span>
 				<!-- H4 -->
-				<h4 class="">見出しH4</h4>
+				<h4 class="h4">見出しH4</h4>
 				<!-- H4 -->
 
 				<span class="label label-primary">H5</span>
 				<!-- H5 -->
-				<h5 class="">見出しH5</h5>
+				<h5 class="h5">見出しH5</h5>
 				<!-- H5 -->
 		</section>
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">テキスト</h1>
 
 				<span class="label label-primary">通常テキスト</span>
@@ -197,7 +189,7 @@
 				</div>
 				<!-- テキスト左回り込み (グリッドタイプ) -->
 		</section>
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">ボックス</h1>
 
 				<span class="label label-primary"></span>
@@ -222,7 +214,7 @@
 				<!--  -->
 		</section>
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">リスト、定義リスト</h1>
 
 				<span class="label label-primary"></span>
@@ -291,7 +283,7 @@
 				<!--  -->
 		</section>
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">テーブル</h1>
 
 				<span class="label label-primary">テーブル (タイプ1)</span>
@@ -418,7 +410,7 @@
 				<!-- テーブル (タイプ3) -->
 		</section>
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">リンク</h1>
 
 				<span class="label label-primary">通常リンク</span><br>
@@ -515,7 +507,7 @@
 				<!--  -->
 		</section>
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">アイコン、ラベル</h1>
 				<span class="label label-primary m-t">ラベル</span><br>
 				<!--  -->
@@ -525,7 +517,7 @@
 
 		</section>
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">ダイアログ</h1>
 
 				<span class="label label-primary m-t">モーダル</span><br>
@@ -542,23 +534,25 @@
 
 		</section>
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">コントロール</h1>
 
 				<span class="label label-primary">ツールチップ</span><br>
 				<!-- ツールチップ -->
-				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+				<p>
+			    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">Tooltip on left</button>
+			    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+			    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+			    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+			  </p>
 				<!-- ツールチップ -->
 		</section>
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">その他</h1>
 		</section>
 
-		<section class="m-b-lg">
+		<section class="m-b-3">
 				<h1 class="element-title">プラグイン</h1>
 		</section>
 
@@ -567,22 +561,29 @@
 <footer>
 		<div class="container-fluid">
 				<div class="row">
-						<div class="input-group m-a hidden-md-up">
+						<div class="input-group m-a-1 hidden-md-up">
 								<input type="text" class="form-control" placeholder="検索する">
 								<span class="input-group-btn"><button class="btn btn-primary" type="submit">検索</button></span>
 						</div>
-						<button type="submit" class="btn btn-primary hidden-md-up">お問い合わせ</button>
-						<ul class="list-inline center-block m-t-md">
-								<li><a href="">リンク</a></li>
-								<li><a href="">リンク</a></li>
-								<li><a href="">リンク</a></li>
-								<li><a href="">リンク</a></li>
-								<li><a href="">リンク</a></li>
-								<li><a href="">リンク</a></li>
+						<div class="text-xs-center">
+							<button type="submit" class="btn btn-primary hidden-md-up">お問い合わせ</button>
+						</div>
+						<ul class="list-inline text-xs-center m-t-1">
+								<li class="list-inline-item"><a href="">リンク</a></li>
+								<li class="list-inline-item"><a href="">リンク</a></li>
+								<li class="list-inline-item"><a href="">リンク</a></li>
+								<li class="list-inline-item"><a href="">リンク</a></li>
+								<li class="list-inline-item"><a href="">リンク</a></li>
+								<li class="list-inline-item"><a href="">リンク</a></li>
 						</ul>
-						<p>&copy;2015 Netyear Craft, Inc.</p>
+						<p class="text-xs-center">&copy;2015 Netyear Craft, Inc.</p>
 				</div>
 		</div>
 </footer>
+<script src="common/js/jquery-2.1.4.min.js"></script>
+<script src="common/js/tether.min.js"></script>
+<script src="common/js/util.js"></script>
+<script src="common/js/bootstrap.js"></script>
+<script src="common/js/bootstrap-customize.js"></script>
 </body>
 </html>
