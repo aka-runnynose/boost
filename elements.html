@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="ja">
+<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>エレメントリスト | クラフトストラップ</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link rel="stylesheet" href="common/css/bootstrap.css">
+		<link rel="stylesheet" href="common/css/layout.css">
+		<link rel="stylesheet" href="common/css/de_customize_a.css">
+		<script src="common/js/jquery-2.1.4.min.js"></script>
+		<script src="common/js/bootstrap.js"></script>
+		<script src="common/js/bootstrap-customize.js"></script>
+		<script>
+				$(function () {
+						$('[data-toggle="tooltip"]').tooltip();
+				});
+		</script>
+		<style>
+				.element-title {
+						font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
+						border-bottom: solid 5px #5A5A5A;
+				}
+				.copy_btn {
+						display: inline-block;
+						padding: .25em .4em;
+						margin-left: 5px;
+						background-color: #ccc;
+						font-size: 75%;
+						font-weight: bold;
+						line-height: 1;
+						text-align: center;
+						white-space: nowrap;
+						vertical-align: baseline;
+						border-radius: 0.25rem;
+						outline: none;
+				}
+				.copy_btn:hover {
+						color: #fff;
+				}
+				body style {
+						display: block;
+						margin: 0 auto;
+						max-width: 100%;
+						font-size: 0.8rem;
+						text-align: left;
+						background: #ccc;
+						color: #444;
+						white-space: pre;
+						font-family: Monaco, monospace;
+				}
+				body style:focus {
+						outline: 0;
+				}
+		</style>
+</head>
+<body>
+<header class="container-fluid">
+		<div class="navbar row">
+				<p class="pull-xs-left"><a href=""><img src="common/img/logo_dummy.jpg" alt=""></a></p>
+				<div class="hidden-sm-down pull-xs-right clearfix">
+						<ul class="nav navbar-nav pull-xs-left">
+								<li class="nav-item nav-link"><a href="">リンク</a></li>
+								<li class="nav-item nav-link"><a href="">リンク</a></li>
+						</ul>
+						<div class="input-group pull-xs-left m-x">
+								<input type="text" class="form-control" placeholder="検索する">
+								<span class="pcSearch input-group-btn"><button class="btn btn-primary" type="submit">検索</button></span>
+						</div>
+						<button type="submit" class="btn btn-primary pull-xs-left">お問い合わせ</button>
+				</div>
+				<nav>
+						<button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+								&#9776;
+						</button>
+						<ul class="list-unstyled navbar-toggleable-sm collapse clear" id="exCollapsingNavbar">
+								<li class="col-md-2 text-md-center"><a href="">ナビ1</a></li>
+								<li class="col-md-2 text-md-center"><a href="">ナビ2</a></li>
+								<li class="col-md-2 text-md-center"><a href="">ナビ3</a></li>
+								<li class="col-md-2 text-md-center"><a href="">ナビ4</a></li>
+								<li class="col-md-2 text-md-center"><a href="">ナビ5</a></li>
+								<li class="col-md-2 text-md-center"><a href="">ナビ6</a></li>
+								<li>
+										<ul class="hidden-md-up">
+												<li><a href="">リンク</a></li>
+												<li><a href="">リンク</a></li>
+										</ul>
+								</li>
+						</ul>
+				</nav>
+		</div>
+</header>
+<hr class="m-t-0">
+
+<div class="container">
+
+		<section class="m-b-lg">
+				<h1 class="element-title">見出し</h1>
+
+				<span class="label label-primary">H1-1</span><button class="copy_btn" type="button" onmousedown='window.clipboardData.setData("Text","\<h1 class=\"\"\>見出しH1</h1>");'>copy HTML</button>
+				<!-- H1 -->
+				<h1 class="">見出しH1</h1>
+				<!-- H1 -->
+
+				<span class="label label-primary">H1-2</span>
+				<!-- H1-2 -->
+				<h1 class=""><span class="">テキスト</span><br>見出しH1-2</h1>
+				<!-- H1-2 -->
+
+				<span class="label label-primary">H2</span>
+				<!-- H2 -->
+				<h2 class="">見出しH2</h2>
+				<!-- H2 -->
+
+				<span class="label label-primary">H3</span>
+				<!-- H3 -->
+				<h3 class="">見出しH3</h3>
+				<!-- H3 -->
+
+				<span class="label label-primary">H4</span>
+				<!-- H4 -->
+				<h4 class="">見出しH4</h4>
+				<!-- H4 -->
+
+				<span class="label label-primary">H5</span>
+				<!-- H5 -->
+				<h5 class="">見出しH5</h5>
+				<!-- H5 -->
+		</section>
+		<section class="m-b-lg">
+				<h1 class="element-title">テキスト</h1>
+
+				<span class="label label-primary">通常テキスト</span>
+				<!-- 通常テキスト -->
+				<p class="font-weight-normal">通常テキストです。通常テキストです。通常テキストです。通常テキストです。</p>
+				<!-- 通常テキスト -->
+
+				<span class="label label-primary">通常テキスト</span>
+				<!-- 強調テキスト -->
+				<p class="font-weight-bold">強調テキストです。強調テキストです。強調テキストです。強調テキストです。</p>
+				<!-- 強調テキスト -->
+
+				<span class="label label-primary">左揃え</span>
+				<!-- 左揃え -->
+				<p class="text-xs-left">左揃えです。</p>
+				<p class="text-md-left">768px以上で左揃えです。</p>
+				<!-- 左揃え -->
+
+				<span class="label label-primary">中央揃え</span>
+				<!-- 中央揃え -->
+				<p class="text-xs-center">常に中央揃えです。</p>
+				<p class="text-md-center">768px以上で中央揃えです。</p>
+				<!-- 中央揃え -->
+
+				<span class="label label-primary">右揃え</span>
+				<!-- 右揃え -->
+				<p class="text-xs-right">常に右揃えです。</p>
+				<p class="text-md-right">768px以上で右揃えです。</p>
+				<!-- 右揃え -->
+
+				<span class="label label-primary">揃え組み合わせ</span>
+				<!-- 右揃え -->
+				<p class="text-xs-center text-sm-right text-md-left text-lg-center text-xl-right">組み合わせて使えます。</p>
+				<!-- 右揃え -->
+
+				<span class="label label-primary">テキスト右回り込み (ナチュラルタイプ)</span>
+				<!-- テキスト右回り込み (ナチュラルタイプ) -->
+				<div class="clearfix">
+						<p class="pull-md-left"><img src="common/img/img_dummy_02.jpg" alt=""></p>
+						<p>サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　</p>
+				</div>
+				<!-- テキスト右回り込み (ナチュラルタイプ) -->
+
+				<span class="label label-primary">テキスト左回り込み (ナチュラルタイプ)</span>
+				<!-- テキスト左回り込み (ナチュラルタイプ) -->
+				<div class="clearfix">
+						<p class="pull-md-right"><img src="common/img/img_dummy_02.jpg" alt=""></p>
+						<p>サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　</p>
+				</div>
+				<!-- テキスト左回り込み (ナチュラルタイプ) -->
+
+				<span class="label label-primary">テキスト右回り込み (グリッドタイプ)</span>
+				<!-- テキスト右回り込み (グリッドタイプ) -->
+				<div>
+						<p class="col-md-6"><img src="common/img/img_dummy_02.jpg" alt=""></p>
+						<p>サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　</p>
+				</div>
+				<!-- テキスト右回り込み (グリッドタイプ) -->
+
+				<span class="label label-primary">テキスト左回り込み (グリッドタイプ)</span>
+				<!-- テキスト左回り込み (グリッドタイプ) -->
+				<div>
+						<p class="col-md-6 pull-md-right"><img src="common/img/img_dummy_02.jpg" alt=""></p>
+						<p>サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　サンプルテキスト　</p>
+				</div>
+				<!-- テキスト左回り込み (グリッドタイプ) -->
+		</section>
+		<section class="m-b-lg">
+				<h1 class="element-title">ボックス</h1>
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<div class="box-default">
+						<p>引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。引用文が入ります。</p>
+				</div>
+				<!--  -->
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<div class="box-info">
+						<p>補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。補足が入ります。</p>
+				</div>
+				<!--  -->
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<div class="box-warning">
+						<p>注意が入ります。注意が入ります。注意が入ります。注意が入ります。注意が入ります。注意が入ります。注意が入ります。注意が入ります。注意が入ります。注意が入ります。</p>
+				</div>
+				<!--  -->
+		</section>
+
+		<section class="m-b-lg">
+				<h1 class="element-title">リスト、定義リスト</h1>
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<ul class="list-caveat">
+						<li><span>注)</span>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+						<li><span>注)</span>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+				</ul>
+				<!--  -->
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<ul class="list-note">
+						<li><span>※</span>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+						<li><span>※</span>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+				</ul>
+				<!--  -->
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<ol class="list-note-number">
+						<li><span>※&nbsp;1</span>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+						<li><span>※&nbsp;2</span>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+						<li><span>※10</span>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+				</ol>
+				<!--  -->
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<ul class="list-unstyled">
+						<li>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+						<li>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。
+								<ul>
+										<li>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+								</ul>
+						</li>
+				</ul>
+				<!--  -->
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<ol class="list-number">
+						<li>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+						<li>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。
+								<ol class="list-number">
+										<li>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</li>
+								</ol>
+						</li>
+				</ol>
+				<!--  -->
+
+				<span class="label label-primary">定義リスト</span>
+				<!-- 定義リスト -->
+				<dl>
+						<dt>定義リスト</dt>
+						<dd>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</dd>
+				</dl>
+				<!-- 定義リスト -->
+
+				<span class="label label-primary">定義リスト (水平)</span>
+				<!--  -->
+				<dl class="dl-md-horizontal">
+						<dt>定義リスト</dt>
+						<dd>通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。通常テキストです。</dd>
+				</dl>
+				<!--  -->
+		</section>
+
+		<section class="m-b-lg">
+				<h1 class="element-title">テーブル</h1>
+
+				<span class="label label-primary">テーブル (タイプ1)</span>
+				<!-- テーブル (タイプ1) -->
+				<div class="table-md-definition">
+						<table class="table table-bordered">
+								<tbody>
+								<tr>
+										<th>見出し1</th>
+										<td>テキスト1</td>
+								</tr>
+								<tr>
+										<th>見出し2</th>
+										<td>テキスト2</td>
+								</tr>
+								<tr>
+										<th>見出し3</th>
+										<td>テキスト3</td>
+								</tr>
+								<tr>
+										<th>見出し4</th>
+										<td>テキスト4</td>
+								</tr>
+								<tr>
+										<th>見出し5</th>
+										<td>テキスト5</td>
+								</tr>
+								</tbody>
+						</table>
+				</div>
+				<!-- テーブル (タイプ1) -->
+
+				<span class="label label-primary">テーブル (タイプ2)</span>
+				<!-- テーブル (タイプ2) -->
+				<div class="table-md-list">
+						<table class="table table-bordered">
+								<tbody>
+								<tr>
+										<th>見出し1</th>
+										<td>テキスト1</td>
+										<td>テキスト1</td>
+										<td>テキスト1</td>
+										<td>テキスト1</td>
+								</tr>
+								<tr>
+										<th>見出し2</th>
+										<td>テキスト2</td>
+										<td>テキスト2</td>
+										<td>テキスト2</td>
+										<td>テキスト2</td>
+								</tr>
+								<tr>
+										<th>見出し3</th>
+										<td>テキスト3</td>
+										<td>テキスト3</td>
+										<td>テキスト3</td>
+										<td>テキスト3</td>
+								</tr>
+								<tr>
+										<th>見出し4</th>
+										<td>テキスト4</td>
+										<td>テキスト4</td>
+										<td>テキスト4</td>
+										<td>テキスト4</td>
+								</tr>
+								<tr>
+										<th>見出し5</th>
+										<td>テキスト5</td>
+										<td>テキスト5</td>
+										<td>テキスト5</td>
+										<td>テキスト5</td>
+								</tr>
+								</tbody>
+						</table>
+				</div>
+				<!-- テーブル (タイプ2) -->
+
+				<span class="label label-primary">テーブル (タイプ3)</span>
+				<!-- テーブル (タイプ3) -->
+				<div class="table-responsive">
+						<table class="table table-bordered">
+								<thead>
+								<tr>
+										<th>#</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+										<th scope="row">1</th>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+								</tr>
+								<tr>
+										<th scope="row">2</th>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+								</tr>
+								<tr>
+										<th scope="row">3</th>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+								</tr>
+								</tbody>
+						</table>
+				</div>
+				<!-- テーブル (タイプ3) -->
+		</section>
+
+		<section class="m-b-lg">
+				<h1 class="element-title">リンク</h1>
+
+				<span class="label label-primary">通常リンク</span><br>
+				<!--  -->
+				<a href="_dummy_.html">リンク</a>
+				<!--  -->
+				<!--  -->
+				<p>テキストテキストテキストテキスト<a href="_dummy_.html">文中リンク</a>テキストテキストテキスト</p>
+				<!--  -->
+
+				<span class="label label-primary">PDFリンク</span><br>
+				<!--  -->
+				<a class="" href="_dummy_.html">PDFリンク</a>
+				<p>テキストテキストテキストテキスト<a class="" href="_dummy_.html">PDFリンク</a>テキストテキストテキスト</p>
+				<!--  -->
+
+				<span class="label label-primary">別窓リンク</span><br>
+				<!--  -->
+				<a class="" href="_dummy_.html">別窓リンク</a>
+				<p>テキストテキストテキストテキスト<a class="" href="_dummy_.html">別窓リンク</a>テキストテキストテキスト</p>
+				<!--  -->
+
+				<span class="label label-primary">ボタンリンク</span><br>
+				<!--  -->
+				<a class="btn btn-primary" href="_dummy_.html">ボタンリンク</a>
+				<a class="btn btn-primary-outline" href="_dummy_.html">ボタンリンク</a>
+				<!--  -->
+
+				<br><span class="label label-primary m-t">ボタンリンク (別窓)</span><br>
+				<!--  -->
+				<a class="btn btn-primary" href="_dummy_.html"><span class="">ボタンリンク (別窓)</span></a>
+				<!--  -->
+
+				<br><span class="label label-primary m-t">ボタンリンク ()</span><br>
+				<!--  -->
+				<a class="btn btn-md-block btn-primary" href="_dummy_.html"><span class="">ボタンリンク</span></a>
+				<!--  -->
+
+				<br><span class="label label-primary m-t">タブ</span>
+				<!-- タブ -->
+				<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item">
+								<a class="nav-link active" href="#ID-name1" role="tab" data-toggle="tab">タブボタン1</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="#ID-name2" role="tab" data-toggle="tab">タブボタン2</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="#ID-name3" role="tab" data-toggle="tab">タブボタン3</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="#ID-name4" role="tab" data-toggle="tab">タブボタン4</a>
+						</li>
+				</ul>
+				<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="ID-name1">
+								タブコンテンツ1
+						</div>
+						<div role="tabpanel" class="tab-pane" id="ID-name2">
+								タブコンテンツ2
+						</div>
+						<div role="tabpanel" class="tab-pane" id="ID-name3">
+								タブコンテンツ3
+						</div>
+						<div role="tabpanel" class="tab-pane" id="ID-name4">
+								タブコンテンツ4
+						</div>
+				</div>
+				<!-- タブ -->
+
+				<span class="label label-primary"></span>
+				<!--  -->
+				<nav>
+						<ul class="pagination">
+								<li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+												<span aria-hidden="true">&laquo;</span>
+												<span class="sr-only">Previous</span>
+										</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+												<span class="sr-only">Next</span>
+										</a>
+								</li>
+						</ul>
+				</nav>
+				<!--  -->
+		</section>
+
+		<section class="m-b-lg">
+				<h1 class="element-title">アイコン、ラベル</h1>
+				<span class="label label-primary m-t">ラベル</span><br>
+				<!--  -->
+				<span class="label label-primary">ラベル</span>
+				<span class="label label-pill label-primary">ラベル</span>
+				<!--  -->
+
+		</section>
+
+		<section class="m-b-lg">
+				<h1 class="element-title">ダイアログ</h1>
+
+				<span class="label label-primary m-t">モーダル</span><br>
+				<!-- モーダル -->
+				<button class="btn btn-primary" data-toggle="modal" data-target=".data-example">Large modal</button>
+				<div class="modal fade data-example" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-md">
+								<div class="modal-content">
+										<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+								</div>
+						</div>
+				</div>
+				<!-- モーダル -->
+
+		</section>
+
+		<section class="m-b-lg">
+				<h1 class="element-title">コントロール</h1>
+
+				<span class="label label-primary">ツールチップ</span><br>
+				<!-- ツールチップ -->
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+				<!-- ツールチップ -->
+		</section>
+
+		<section class="m-b-lg">
+				<h1 class="element-title">その他</h1>
+		</section>
+
+		<section class="m-b-lg">
+				<h1 class="element-title">プラグイン</h1>
+		</section>
+
+</div>
+<hr class="m-b-0">
+<footer>
+		<div class="container-fluid">
+				<div class="row">
+						<div class="input-group m-a hidden-md-up">
+								<input type="text" class="form-control" placeholder="検索する">
+								<span class="input-group-btn"><button class="btn btn-primary" type="submit">検索</button></span>
+						</div>
+						<button type="submit" class="btn btn-primary hidden-md-up">お問い合わせ</button>
+						<ul class="list-inline center-block m-t-md">
+								<li><a href="">リンク</a></li>
+								<li><a href="">リンク</a></li>
+								<li><a href="">リンク</a></li>
+								<li><a href="">リンク</a></li>
+								<li><a href="">リンク</a></li>
+								<li><a href="">リンク</a></li>
+						</ul>
+						<p>&copy;2015 Netyear Craft, Inc.</p>
+				</div>
+		</div>
+</footer>
+</body>
+</html>

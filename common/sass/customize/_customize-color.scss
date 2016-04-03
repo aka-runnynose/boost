@@ -1,0 +1,42 @@
+////////// テーマカラー //////////
+@mixin customize-theme-color($theme,$brand-theme) {
+  //_variables.scss
+  $btn-theme-color: #fff !default;
+  $btn-theme-bg: $brand-theme !default;
+  $btn-theme-border: $btn-theme-bg !default;
+  $label-theme-bg: $brand-theme !default;
+  $label-color: #fff !default;
+  $progress-bar-theme-bg: $brand-theme !default;
+
+  //_utilities-background.scss
+  @include bg-variant('.bg-#{$theme}', $brand-theme);
+
+  //_utilities.scss
+  @include text-emphasis-variant('.text-#{$theme}', $brand-theme);
+
+  //_buttons.scss
+  .btn-#{$theme} {
+    @include button-variant($btn-theme-color, $btn-theme-bg, $btn-theme-border);
+  }
+
+  //_labels.scss
+  .label-#{$theme} {
+    @include label-variant($label-theme-bg);
+  }
+
+  //_progress.scss
+  .progress-success {
+    @include progress-variant($progress-bar-theme-bg);
+  }
+
+  //_card.scss
+  .card-#{$theme} {
+    background-color: $brand-theme;
+    border-color: $brand-theme;
+  }
+
+  //layout.scss
+  .box-#{$theme} {
+    border: solid 1px $brand-theme;
+  }
+}
