@@ -9,14 +9,12 @@
       line-height: $line-height;
     }
     &:first-child {
-      > a,
-      > span {
+      .page-link {
         @include border-left-radius($border-radius);
       }
     }
     &:last-child {
-      > a,
-      > span {
+      .page-link {
         @include border-right-radius($border-radius);
       }
     }
